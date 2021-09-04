@@ -40,7 +40,7 @@
                 <div class="col-md-4">
                     <!-- Mars Facts -->
                     <div class="row" id="mars-facts">
-                        <h4>Mars Facts</h4>
+                        <h4 class="text-center">Mars Facts</h4>
                         {{mars.facts | safe}}   
                     </div>
                 </div>    
@@ -53,7 +53,7 @@
                 </div>
 
                {% for hemisphere in mars.hemispheres %}
-               <div class="col-md-6">
+               <div class="col-md-3">
                    <div class="thumbnail">
                        <img src="{{hemisphere.img_url | default('static/images/error.png', true)}}" alt="Responsive image" class="img-responsive" >
                        <div class="caption">
